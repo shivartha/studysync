@@ -1,12 +1,10 @@
 import { NavLink } from "react-router-dom";
 import "./Sidebar.css";
 
-// Centralizing nav items as data (instead of hardcoding 6 <NavLink> tags)
-// means adding/removing a feature later is a one-line change here,
-// not a hunt through JSX.
 const NAV_ITEMS = [
   { to: "/", label: "Dashboard", icon: "📊", end: true },
   { to: "/planner", label: "Planner", icon: "🗓️" },
+  { to: "/subjects", label: "Subjects", icon: "📚" },
   { to: "/tasks", label: "Tasks", icon: "✅" },
   { to: "/pomodoro", label: "Pomodoro", icon: "⏱️" },
   { to: "/progress", label: "Progress", icon: "📈" },
@@ -22,9 +20,6 @@ function Sidebar() {
         <ul className="sidebar-nav">
           {NAV_ITEMS.map((item) => (
             <li key={item.to}>
-              {/* `end` prevents "/" from staying highlighted when the URL
-                  is actually "/planner", "/tasks", etc. NavLink applies
-                  the "active" class automatically — no manual state needed. */}
               <NavLink
                 to={item.to}
                 end={item.end}
