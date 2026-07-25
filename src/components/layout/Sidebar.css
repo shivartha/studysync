@@ -1,0 +1,51 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  padding: 24px 16px;
+  background-color: var(--color-surface);
+  border-right: 1px solid var(--color-border);
+  box-sizing: border-box;
+}
+
+.sidebar-logo {
+  font-size: 1.4rem;
+  margin: 0 0 24px 8px;
+  color: var(--color-primary);
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-text);
+  font-size: 0.95rem;
+  transition: background-color 0.15s ease;
+}
+
+.sidebar-link:hover {
+  background-color: var(--color-hover);
+}
+
+/* Applied automatically by NavLink when the route matches — see Sidebar.jsx */
+.sidebar-link.active {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.sidebar-icon {
+  font-size: 1.1rem;
+}
