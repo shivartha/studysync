@@ -1,0 +1,28 @@
+/*
+  Light theme is the default (:root). Dark theme overrides live under
+  [data-theme="dark"] on <html> — a JS toggle will set that attribute
+  and save the choice to localStorage once we build the theme feature.
+  Using an attribute (not just prefers-color-scheme) is what lets the
+  user override the OS setting with a manual switch.
+*/
+:root {
+  --color-bg: #f7f7fb;
+  --color-surface: #ffffff;
+  --color-text: #1f2028;
+  --color-text-muted: #6b6b76;
+  --color-border: #e5e4e7;
+  --color-primary: #6c5ce7;
+  --color-hover: #f0eefc;
+
+  --font-sans: system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+[data-theme="dark"] {
+  --color-bg: #16171d;
+  --color-surface: #1f2028;
+  --color-text: #e5e5ea;
+  --color-text-muted: #9ca3af;
+  --color-border: #2e303a;
+  --color-primary: #a29bfe;
+  --color-hover: #2a2b35;
+}
