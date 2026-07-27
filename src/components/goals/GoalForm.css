@@ -1,0 +1,39 @@
+.goal-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.goal-form input[type="text"],
+.goal-form input[type="number"] {
+  padding: 8px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  font-size: 0.9rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.goal-form input[placeholder="Goal (e.g. Solve DSA problems)"] {
+  flex: 2;
+  min-width: 200px;
+}
+
+.goal-form input[type="number"] {
+  width: 90px;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
