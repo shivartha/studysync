@@ -1,0 +1,14 @@
+.progress-section {
+  margin-top: 28px;
+}
+
+.progress-section h2 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.progress-subtext {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 6px;
+}
