@@ -1,0 +1,11 @@
+.planner-group {
+  margin-bottom: 24px;
+}
+
+.planner-group-label {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
