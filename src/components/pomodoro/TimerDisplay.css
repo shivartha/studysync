@@ -1,0 +1,8 @@
+.timer-display {
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text);
+  margin: 24px 0;
+}

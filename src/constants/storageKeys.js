@@ -7,4 +7,5 @@ export const STORAGE_KEYS = {
   TASKS: "studysync_tasks",
   GOALS: "studysync_goals",
   THEME: "studysync_theme",
+  POMODORO_SESSIONS: "studysync_pomodoro_sessions",
 };
