@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import useTheme from "../../hooks/useTheme";
+import ThemeToggle from "./ThemeToggle";
 import "./Sidebar.css";
 
 const NAV_ITEMS = [
@@ -12,6 +14,8 @@ const NAV_ITEMS = [
 ];
 
 function Sidebar() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <aside className="sidebar">
       <h1 className="sidebar-logo">StudySync</h1>
@@ -34,6 +38,8 @@ function Sidebar() {
           ))}
         </ul>
       </nav>
+
+      <ThemeToggle theme={theme} onToggle={toggleTheme} />
     </aside>
   );
 }

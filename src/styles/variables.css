@@ -1,28 +1,28 @@
 /*
-  Light theme is the default (:root). Dark theme overrides live under
-  [data-theme="dark"] on <html> — a JS toggle will set that attribute
-  and save the choice to localStorage once we build the theme feature.
-  Using an attribute (not just prefers-color-scheme) is what lets the
-  user override the OS setting with a manual switch.
+  Slate/steel-blue "focus desk" palette — muted navy accent instead of
+  a typical tech-purple scheme, closer to a productivity-tool feel.
+
+  Light theme is default (:root). Dark theme overrides live under
+  [data-theme="dark"] on <html>, set by the toggle in useTheme.js.
 */
 :root {
-  --color-bg: #f7f7fb;
-  --color-surface: #ffffff;
-  --color-text: #1f2028;
-  --color-text-muted: #6b6b76;
-  --color-border: #e5e4e7;
-  --color-primary: #6c5ce7;
-  --color-hover: #f0eefc;
+  --color-bg: #F5F7FA;
+  --color-surface: #FFFFFF;
+  --color-text: #1F2937;
+  --color-text-muted: #6B7280;
+  --color-border: #D8E0EA;
+  --color-primary: #355C7D;
+  --color-hover: #85accc;
 
-  --font-sans: system-ui, "Segoe UI", Roboto, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 [data-theme="dark"] {
-  --color-bg: #16171d;
-  --color-surface: #1f2028;
-  --color-text: #e5e5ea;
-  --color-text-muted: #9ca3af;
-  --color-border: #2e303a;
-  --color-primary: #a29bfe;
-  --color-hover: #2a2b35;
+  --color-bg: #141A22;
+  --color-surface: #1E2732;
+  --color-text: #F3F6FA;
+  --color-text-muted: #AAB6C5;
+  --color-border: #2F3B49;
+  --color-primary: #6D95B8;
+  --color-hover: #455664;
 }
