@@ -37,3 +37,11 @@
   cursor: pointer;
   font-size: 0.9rem;
 }
+
+@media (max-width: 480px) {
+  .subject-form input[type="text"],
+  .task-form input[type="text"],
+  .goal-form input[type="text"] {
+    min-width: 100%;
+  }
+}

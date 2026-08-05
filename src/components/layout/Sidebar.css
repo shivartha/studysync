@@ -7,6 +7,8 @@
   background-color: var(--color-surface);
   border-right: 1px solid var(--color-border);
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar-logo {
@@ -40,7 +42,6 @@
   background-color: var(--color-hover);
 }
 
-/* Applied automatically by NavLink when the route matches — see Sidebar.jsx */
 .sidebar-link.active {
   background-color: var(--color-primary);
   color: #fff;
@@ -48,4 +49,43 @@
 
 .sidebar-icon {
   font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 12px;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .sidebar-logo {
+    display: none; /* saves vertical space on mobile — nav icons are enough */
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .sidebar-link {
+    flex-direction: column;
+    gap: 2px;
+    padding: 6px 10px;
+    font-size: 0.7rem;
+  }
+
+  .sidebar-icon {
+    font-size: 1.2rem;
+  }
+
+  .theme-toggle {
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

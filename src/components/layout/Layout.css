@@ -6,11 +6,15 @@
 .app-content {
   flex: 1;
   padding: 32px;
+  min-width: 0; /* prevents flex children from overflowing their container */
 }
 
-/* Sidebar becomes a top bar on small screens instead of a fixed side column */
 @media (max-width: 768px) {
   .app-layout {
     flex-direction: column;
+  }
+
+  .app-content {
+    padding: 16px;
   }
 }
