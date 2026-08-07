@@ -2,13 +2,15 @@
 
 I built StudySync to solve a problem I actually have — juggling subjects, deadlines, and study sessions across sticky notes and random apps. It's a single place to plan what to study, track it, time your focus sessions, and see how you're actually doing over time.
 
-**Live demo:** [Coming soon]
+**Live demo:** [studysync-one-jade.vercel.app](https://studysync-one-jade.vercel.app/)
 
-<!-- Screenshots — add after deployment
+## Screenshots
+
 ![Dashboard](./screenshots/dashboard.png)
+![Progress](./screenshots/progress.png)
 ![Pomodoro Timer](./screenshots/pomodoro.png)
-![Dark Mode](./screenshots/dark-mode.png)
--->
+![Subjects — dark mode](./screenshots/subjects.png)
+*Subjects page shown in dark mode to demonstrate the theme toggle.*
 
 ## What it does
 
